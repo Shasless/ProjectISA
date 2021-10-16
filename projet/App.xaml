@@ -15,6 +15,9 @@
             <DataTemplate DataType="{x:Type ViewModel:HomeViewModel }">
                 <view:HomeView/>
             </DataTemplate>
+            <DataTemplate DataType="{x:Type ViewModel:CoinViewModel }">
+                <view:CoinView/>
+            </DataTemplate>
         </ResourceDictionary>
          
     </Application.Resources>

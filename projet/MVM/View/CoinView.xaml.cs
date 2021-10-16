@@ -2,9 +2,9 @@
 
 namespace projet.MVM.View
 {
-    public partial class TestView : UserControl
+    public partial class CoinView : UserControl
     {
-        public TestView()
+        public CoinView()
         {
             InitializeComponent();
         }
