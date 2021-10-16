@@ -1,4 +1,6 @@
-﻿namespace projet.MVM.ViewWodel
+﻿using System.Reflection;
+
+namespace projet.MVM.ViewWodel
 {
     public class CoinViewModel
     {

@@ -9,6 +9,7 @@ namespace projet.MVM.ViewWodel
         public RelayCommand CoinViewComand { get; set; }
         public HomeViewModel HomeVM { get; set; }
         public CoinViewModel CoinVM { get; set; }
+        
         private object _currentView;
 
         public object CurrentView

@@ -24,14 +24,14 @@
                 <RowDefinition Height="75"/>
                 <RowDefinition/>
             </Grid.RowDefinitions>
-            <TextBlock Text="Projet" VerticalAlignment="Center" HorizontalAlignment="Left" Foreground="White" FontSize="22" Margin="20,0,0,0"/>
-            <StackPanel Grid.Row="1" >
-                <RadioButton Content="Home" Height="50" Foreground="White" FontSize="14" Style="{StaticResource MenuButtonTheme}" IsChecked="True" Command="{Binding HomeViewComand}"/>
-                <RadioButton Content="Bitcoin" Height="50" Foreground="White" FontSize="14" Style="{StaticResource MenuButtonTheme}" Command="{Binding CoinViewComand}"/>
-                <RadioButton Content="skour" Height="50" Foreground="White" FontSize="14" Style="{StaticResource MenuButtonTheme}"/>
+            <TextBlock Text="Projet" Name="titre" VerticalAlignment="Center" HorizontalAlignment="Left" Foreground="White" FontSize="22" Margin="20,0,0,0"/>
+            <StackPanel Grid.Row="1" Name="menu" >
+                <RadioButton Name ="home" Content="Home" Height="50" Foreground="White" FontSize="14" Style="{StaticResource MenuButtonTheme}" IsChecked="True" Command="{Binding HomeViewComand}"/>
+                <RadioButton Name= "coin" Content="Bitcoin" Height="50" Foreground="White" FontSize="14" Style="{StaticResource MenuButtonTheme}" Command="{Binding CoinViewComand}"/>
             </StackPanel>
-            <TextBox Width="250" Height="40" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="5" Grid.Column="1" Style="{StaticResource SearchbarTheme}"/>
+            <TextBox Name= "searchbar" Width="250" Height="40" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="5" Grid.Column="1" Style="{StaticResource SearchbarTheme}"/>
             <Button Grid.Column="1" Width="20" Height="20" Background="Transparent" BorderThickness="0" Foreground="Gray" FontWeight="Bold" HorizontalAlignment="Right" VerticalAlignment= "Top" Content="⨉" Click="ButtonBase_OnClick"/>
+            <Button Grid.Column="1" Width="20" Height="20" Background="Transparent" BorderThickness="0" Foreground="Gray" FontWeight="Bold" Margin="-300,5,5,5" Content="GO" Command="{Binding CoinViewComand}" Click="searchclick"/>
             
             <ContentControl Grid.Column="1" Grid.Row="1" Margin="10" Content="{Binding CurrentView}"/>
         </Grid>

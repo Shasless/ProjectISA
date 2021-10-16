@@ -6,9 +6,12 @@
              xmlns:local="clr-namespace:projet.MVM.View"
              mc:Ignorable="d"
              d:DesignHeight="300" d:DesignWidth="300"
-             Background="Black">
+             >
     
-    <Grid>
-        
-    </Grid>
+    <StackPanel>
+        <TextBlock  Foreground="White" FontSize="28" HorizontalAlignment="Left"  Margin="0,0,0,20" Name="title"/>
+        <TextBlock  Foreground="White" FontSize="28" HorizontalAlignment="Left"  Margin="0,0,0,20" Name="a"/>
+        <TextBlock  Foreground="White" FontSize="28" HorizontalAlignment="Left"  Margin="0,0,0,20" Name="aa"/>
+       
+    </StackPanel>
 </UserControl>

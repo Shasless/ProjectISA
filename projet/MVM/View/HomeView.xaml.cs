@@ -1,4 +1,5 @@
-﻿using System.Windows.Controls;
+﻿using System.Reflection;
+using System.Windows.Controls;
 
 namespace projet.MVM.View
 {
@@ -7,6 +8,7 @@ namespace projet.MVM.View
         public HomeView()
         {
             InitializeComponent();
+            
         }
     }
 }

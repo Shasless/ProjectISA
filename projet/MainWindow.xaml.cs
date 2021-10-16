@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using projet.Core;
+using projet.MVM.ViewWodel;
 
 namespace projet
 {
@@ -24,6 +26,21 @@ namespace projet
         {
             InitializeComponent();
         }
+        public string Searchstr
+        {
+            get
+            {
+                return MainCoin;
+
+            }
+            
+            
+        }
+
+        public string MainCoin = "Bitcoin";
+        
+
+        
        
 
         private void ButtonBase_OnClick(object sender, RoutedEventArgs e)
@@ -34,6 +51,19 @@ namespace projet
         {
             if (e.ChangedButton == MouseButton.Left)
                 this.DragMove();
+        }
+
+        private void searchclick(object sender, RoutedEventArgs e)
+        {
+            if (searchbar.Text.Length >= 1)
+            {
+                coin.Content = searchbar.Text;
+                MainCoin = searchbar.Text;
+               
+            }
+            coin.IsChecked = true;
+            
+            
         }
     }
 }
