@@ -13,11 +13,13 @@ namespace projet.MVM.View
             InitializeComponent();
             var rand = new Random();
             MainWindow mw = (MainWindow) Application.Current.MainWindow;
-            title.Text = mw.Searchstr;
+            
             var p = new APIcontrol();
-            p.GetInfo("BTC");
+            p.GetInfo(mw.Searchstr);
+            title.Text = p.objectRes.data[0].name;
             a.Text= p.objectRes.data[0].price.ToString();
-            aa.Text= p.objectRes.data[0].symbol.ToString();
+            aa.Text= p.objectRes.data[0].symbol;
+            mw.coin.Content = p.objectRes.data[0].name;
 
 
 

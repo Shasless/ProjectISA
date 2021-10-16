@@ -57,7 +57,7 @@ namespace projet
         {
             if (searchbar.Text.Length >= 1)
             {
-                coin.Content = searchbar.Text;
+                //coin.Content = searchbar.Text;
                 MainCoin = searchbar.Text;
                
             }
