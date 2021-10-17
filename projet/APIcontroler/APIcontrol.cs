@@ -16,34 +16,20 @@ namespace projet.APIcontroler
         
         public  async void GetInfo(string currency)
         {
-            objectRes = new Root();
-            try
-            {
+                objectRes = new Root();
+           
                 var responseBody = Client.GetAsync("https://api.lunarcrush.com/v2?data=assets&key=lnfht57eiirp715eqwevoo&symbol="+currency+"&interval=hour&data_points=24").Result;
 
                 var res = await responseBody.Content.ReadAsStringAsync();
-                objectRes = JsonConvert.DeserializeObject<Root>(res);
-                if (objectRes != null)
+                if (res == "{\"error\":\"We could not find any coins matching the requested ids or symbols\"}")
                 {
-                    var data = objectRes.data;
-                    foreach (var d in data)
-                    {
-                        Console.WriteLine("id : {0}\nname : {1}\nsymbol : {2}" +
-                                          "\nprice : {3}\nprice_btc : {4}\n" +
-                                          "market cap : {5}\npercent change 24h : {6}"
-                            , d.id,d.name,d.symbol,d.price,d.price_btc,d.market_cap,d.percent_change_24h);
-                        
-                    }
-                    
+                    responseBody = Client.GetAsync("https://api.lunarcrush.com/v2?data=assets&key=lnfht57eiirp715eqwevoo&symbol="+"BTC"+"&interval=hour&data_points=24").Result;
+                    res = await responseBody.Content.ReadAsStringAsync();
+
                 }
+                objectRes = JsonConvert.DeserializeObject<Root>(res);
                 
                 
-            }
-            catch (Exception e)
-            {
-                //Console.WriteLine(e.Message);
-                Console.WriteLine("sa a plantè");
-            }
             
         }
         
