@@ -12,6 +12,7 @@ namespace projet.APIcontroler
     {
         private static readonly HttpClient Client = new HttpClient();
         public Root objectRes { get; set; }
+        public Root ranking { get; set; }
         
         
         public  async void GetInfo(string currency)
@@ -45,6 +46,38 @@ namespace projet.APIcontroler
                 Console.WriteLine("sa a plantè");
             }
             
+        }
+
+        public async void GetRanking()
+        {
+            ranking = new Root();
+            try
+            {
+                var responseBody = Client.GetAsync("https://api.lunarcrush.com/v2?data=market&key=lnfht57eiirp715eqwevoo&limit=10&sort=gs&desc=true").Result;
+
+                var res = await responseBody.Content.ReadAsStringAsync();
+                ranking = JsonConvert.DeserializeObject<Root>(res);
+                if (objectRes != null)
+                {
+                    var data = objectRes.data;
+                    foreach (var d in data)
+                    {
+                        Console.WriteLine("id : {0}\nname : {1}\nsymbol : {2}" +
+                                          "\ngalaxy score : {6}\nprice : {3}\nprice_btc : {4}\n" +
+                                          "market cap : {5}"
+                            , d.id,d.n,d.symbol,d.p,d.p_btc,d.mc,d.gs);
+                        
+                    }
+                    
+                }
+                
+                
+            }
+            catch (Exception e)
+            {
+                //Console.WriteLine(e.Message);
+                Console.WriteLine("sa a plantè");
+            }
         }
         
         public static void test(string[] args)
