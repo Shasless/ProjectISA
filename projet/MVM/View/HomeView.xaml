@@ -7,25 +7,165 @@
              mc:Ignorable="d"
              d:DesignHeight="300" d:DesignWidth="300">
     <StackPanel>
-        <TextBlock Text="Test" Foreground="White" FontSize="28" HorizontalAlignment="Left"  Margin="0,0,0,20"/>
         <StackPanel Orientation="Horizontal">
-            <Border Width="400" Height="200" >
+            <Border Width="700" Height="500" >
                 <Border.Background>
                     <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
-                        <GradientStop Color="Aqua" Offset="0.0"/>
-                        <GradientStop Color="#3aa0ff" Offset="1"/>
+                        <GradientStop Color="#743eb6" Offset="0.0"/>
+                        <GradientStop Color="#4419a5" Offset="1"/>
                     </LinearGradientBrush>
                 </Border.Background>
                 <Border.Clip>
-                    <RectangleGeometry RadiusX="10" RadiusY="10" Rect="0,0,400,200"></RectangleGeometry>
+                    <RectangleGeometry RadiusX="10" RadiusY="10" Rect="0,0,700,485"></RectangleGeometry>
                 </Border.Clip>
                 
+                
+                
                 <Grid>
-                    <StackPanel>
-                        <TextBlock Text="qzseqe" Foreground="White" FontSize="28" Margin="20,10,10,0"/>
+                    <Path Stroke="White" StrokeThickness="3" >
+                        <Path.Data>
+                            <LineGeometry StartPoint="140,0" EndPoint="140,500" />
+                        </Path.Data>
+                    </Path>
+                    <Path Stroke="White" StrokeThickness="3" >
+                        <Path.Data>
+                            <LineGeometry StartPoint="280,0" EndPoint="280,500" />
+                        </Path.Data>
+                    </Path>
+                    <Path Stroke="White" StrokeThickness="3" >
+                        <Path.Data>
+                            <LineGeometry StartPoint="420,0" EndPoint="420,500" />
+                        </Path.Data>
+                    </Path>
+                    <Path Stroke="White" StrokeThickness="3" >
+                        <Path.Data>
+                            <LineGeometry StartPoint="560,0" EndPoint="560,500" />
+                        </Path.Data>
+                    </Path>
+                    <Path Stroke="White" StrokeThickness="3" >
+                        <Path.Data>
+                            <LineGeometry StartPoint="0,55" EndPoint="700,55" />
+                        </Path.Data>
+                    </Path>
+                    <Path Stroke="White" StrokeThickness="3" >
+                        <Path.Data>
+                            <LineGeometry StartPoint="0,102" EndPoint="700,102" />
+                        </Path.Data>
+                    </Path>
+                    <Path Stroke="White" StrokeThickness="3" >
+                        <Path.Data>
+                            <LineGeometry StartPoint="0,149" EndPoint="700,149" />
+                        </Path.Data>
+                    </Path>
+                    <Path Stroke="White" StrokeThickness="3" >
+                        <Path.Data>
+                            <LineGeometry StartPoint="0,196" EndPoint="700,196" />
+                        </Path.Data>
+                    </Path>
+                    <Path Stroke="White" StrokeThickness="3" >
+                        <Path.Data>
+                            <LineGeometry StartPoint="0,243" EndPoint="700,243" />
+                        </Path.Data>
+                    </Path>
+                    <Path Stroke="White" StrokeThickness="3" >
+                        <Path.Data>
+                            <LineGeometry StartPoint="0,290" EndPoint="700,290" />
+                        </Path.Data>
+                    </Path>
+                    <Path Stroke="White" StrokeThickness="3" >
+                        <Path.Data>
+                            <LineGeometry StartPoint="0,337" EndPoint="700,337" />
+                        </Path.Data>
+                    </Path>
+                    <Path Stroke="White" StrokeThickness="3" >
+                        <Path.Data>
+                            <LineGeometry StartPoint="0,384" EndPoint="700,384" />
+                        </Path.Data>
+                    </Path>
+                    <Path Stroke="White" StrokeThickness="3" >
+                        <Path.Data>
+                            <LineGeometry StartPoint="0,431" EndPoint="700,431" />
+                        </Path.Data>
+                    </Path>
+                    <StackPanel Orientation="Horizontal">
+                        <Border Width="140" Height="500">
+                            <StackPanel>
+                                <TextBlock Text="Symbol" Foreground="White" FontSize="28" Margin="0,10,0,0" FontWeight="Bold" HorizontalAlignment="Center"/>
+                                <TextBlock Name="s" Foreground="White" FontSize="28" Margin="0,10,0,0" HorizontalAlignment="Center"/>
+                                <TextBlock Name="s2" Foreground="White" FontSize="28" Margin="0,10,0,0" HorizontalAlignment="Center"/>
+                                <TextBlock Name="s3" Foreground="White" FontSize="28" Margin="0,10,0,0" HorizontalAlignment="Center"/>
+                                <TextBlock Name="s4" Foreground="White" FontSize="28" Margin="0,10,0,0" HorizontalAlignment="Center"/>
+                                <TextBlock Name="s5" Foreground="White" FontSize="28" Margin="0,10,0,0" HorizontalAlignment="Center"/>
+                                <TextBlock Name="s6" Foreground="White" FontSize="28" Margin="0,10,0,0" HorizontalAlignment="Center"/>
+                                <TextBlock Name="s7" Foreground="White" FontSize="28" Margin="0,10,0,0" HorizontalAlignment="Center"/>
+                                <TextBlock Name="s8" Foreground="White" FontSize="28" Margin="0,10,0,0" HorizontalAlignment="Center"/>
+                                <TextBlock Name="s9" Foreground="White" FontSize="28" Margin="0,10,0,0" HorizontalAlignment="Center"/>
+                            </StackPanel>
+                        </Border>
+                        <Border Width="140" Height="500">
+                            <StackPanel>
+                                <TextBlock Text="GS" Foreground="White" FontSize="28" Margin="0,10,0,0" FontWeight="Bold" HorizontalAlignment="Center"/>
+                                <TextBlock Name="gs" Foreground="White" FontSize="28" Margin="0,10,0,0" HorizontalAlignment="Center"/>
+                                <TextBlock Name="gs2" Foreground="White" FontSize="28" Margin="0,10,0,0" HorizontalAlignment="Center"/>
+                                <TextBlock Name="gs3" Foreground="White" FontSize="28" Margin="0,10,0,0" HorizontalAlignment="Center"/>
+                                <TextBlock Name="gs4" Foreground="White" FontSize="28" Margin="0,10,0,0" HorizontalAlignment="Center"/>
+                                <TextBlock Name="gs5" Foreground="White" FontSize="28" Margin="0,10,0,0" HorizontalAlignment="Center"/>
+                                <TextBlock Name="gs6" Foreground="White" FontSize="28" Margin="0,10,0,0" HorizontalAlignment="Center"/>
+                                <TextBlock Name="gs7" Foreground="White" FontSize="28" Margin="0,10,0,0" HorizontalAlignment="Center"/>
+                                <TextBlock Name="gs8" Foreground="White" FontSize="28" Margin="0,10,0,0" HorizontalAlignment="Center"/>
+                                <TextBlock Name="gs9" Foreground="White" FontSize="28" Margin="0,10,0,0" HorizontalAlignment="Center"/>
+                            </StackPanel>
+                        </Border>
+                        <Border Width="140" Height="500">
+                            <StackPanel>
+                                <TextBlock Text="Price" Foreground="White" FontSize="28" Margin="0,10,0,0" FontWeight="Bold" HorizontalAlignment="Center"/>
+                                <TextBlock Name="p" Foreground="White" FontSize="28" Margin="0,10,0,0" HorizontalAlignment="Center"/>
+                                <TextBlock Name="p2" Foreground="White" FontSize="28" Margin="0,10,0,0" HorizontalAlignment="Center"/>
+                                <TextBlock Name="p3" Foreground="White" FontSize="28" Margin="0,10,0,0" HorizontalAlignment="Center"/>
+                                <TextBlock Name="p4" Foreground="White" FontSize="28" Margin="0,10,0,0" HorizontalAlignment="Center"/>
+                                <TextBlock Name="p5" Foreground="White" FontSize="28" Margin="0,10,0,0" HorizontalAlignment="Center"/>
+                                <TextBlock Name="p6" Foreground="White" FontSize="28" Margin="0,10,0,0" HorizontalAlignment="Center"/>
+                                <TextBlock Name="p7" Foreground="White" FontSize="28" Margin="0,10,0,0" HorizontalAlignment="Center"/>
+                                <TextBlock Name="p8" Foreground="White" FontSize="28" Margin="0,10,0,0" HorizontalAlignment="Center"/>
+                                <TextBlock Name="p9" Foreground="White" FontSize="28" Margin="0,10,0,0" HorizontalAlignment="Center"/>
+                            </StackPanel>
+                        </Border>
+                        
+                        <Border Width="140" Height="500">
+                            <StackPanel>
+                                <TextBlock Text="P BTC" Foreground="White" FontSize="28" Margin="0,10,0,0" FontWeight="Bold" HorizontalAlignment="Center"/>
+                                <TextBlock Name="pb" Foreground="White" FontSize="28" Margin="0,10,0,0" HorizontalAlignment="Center"/>
+                                <TextBlock Name="pb2" Foreground="White" FontSize="28" Margin="0,10,0,0" HorizontalAlignment="Center"/>
+                                <TextBlock Name="pb3" Foreground="White" FontSize="28" Margin="0,10,0,0" HorizontalAlignment="Center"/>
+                                <TextBlock Name="pb4" Foreground="White" FontSize="28" Margin="0,10,0,0" HorizontalAlignment="Center"/>
+                                <TextBlock Name="pb5" Foreground="White" FontSize="28" Margin="0,10,0,0" HorizontalAlignment="Center"/>
+                                <TextBlock Name="pb6" Foreground="White" FontSize="28" Margin="0,10,0,0" HorizontalAlignment="Center"/>
+                                <TextBlock Name="pb7" Foreground="White" FontSize="28" Margin="0,10,0,0" HorizontalAlignment="Center"/>
+                                <TextBlock Name="pb8" Foreground="White" FontSize="28" Margin="0,10,0,0" HorizontalAlignment="Center"/>
+                                <TextBlock Name="pb9" Foreground="White" FontSize="28" Margin="0,10,0,0" HorizontalAlignment="Center"/>
+                            </StackPanel>
+                        </Border>
+                        
+                        <Border Width="140" Height="500">
+                            <StackPanel>
+                                <TextBlock Text="MC" Foreground="White" FontSize="28" Margin="0,10,0,0" FontWeight="Bold" HorizontalAlignment="Center"/>
+                                <TextBlock Name="mc" Foreground="White" FontSize="28" Margin="0,10,0,0" HorizontalAlignment="Center"/>
+                                <TextBlock Name="mc2" Foreground="White" FontSize="28" Margin="0,10,0,0" HorizontalAlignment="Center"/>
+                                <TextBlock Name="mc3" Foreground="White" FontSize="28" Margin="0,10,0,0" HorizontalAlignment="Center"/>
+                                <TextBlock Name="mc4" Foreground="White" FontSize="28" Margin="0,10,0,0" HorizontalAlignment="Center"/>
+                                <TextBlock Name="mc5" Foreground="White" FontSize="28" Margin="0,10,0,0" HorizontalAlignment="Center"/>
+                                <TextBlock Name="mc6" Foreground="White" FontSize="28" Margin="0,10,0,0" HorizontalAlignment="Center"/>
+                                <TextBlock Name="mc7" Foreground="White" FontSize="28" Margin="0,10,0,0" HorizontalAlignment="Center"/>
+                                <TextBlock Name="mc8" Foreground="White" FontSize="28" Margin="0,10,0,0" HorizontalAlignment="Center"/>
+                                <TextBlock Name="mc9" Foreground="White" FontSize="28" Margin="0,10,0,0" HorizontalAlignment="Center"/>
+                            </StackPanel>
+                        </Border>
+                        
                     </StackPanel>
                 </Grid>
             </Border>
+            
         </StackPanel>
+        
     </StackPanel>
 </UserControl>
