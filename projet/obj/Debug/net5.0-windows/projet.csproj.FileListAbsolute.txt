@@ -64,3 +64,5 @@ C:\Users\adrie\RiderProjects\projet\projet\obj\Debug\net5.0-windows\projet.pdb
 C:\Users\adrie\RiderProjects\projet\projet\obj\Debug\net5.0-windows\projet.genruntimeconfig.cache
 C:\Users\adrie\RiderProjects\projet\projet\obj\Debug\net5.0-windows\MVM\View\GraphView.g.cs
 C:\Users\adrie\RiderProjects\projet\projet\obj\Debug\net5.0-windows\MVM\View\GraphView.baml
+C:\Users\jonat\Downloads\ProjectISA-master\ProjectISA-master\projet\obj\Debug\net5.0-windows\MVM\View\GraphView.g.cs
+C:\Users\jonat\Downloads\ProjectISA-master\ProjectISA-master\projet\obj\Debug\net5.0-windows\MVM\View\GraphView.baml

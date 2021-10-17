@@ -1,29 +1,31 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace projet.APIcontroler
 {
     public class Datum
     {
-        public int id { get; set; }
+        public int? id { get; set; }
         public string name { get; set; }
         public string symbol { get; set; }
-        public double price { get; set; }
-        public double price_btc { get; set; }
-        public long market_cap { get; set; }
-        public double percent_change_24h { get; set; }
-        public double percent_change_7d { get; set; }
-        public double percent_change_30d { get; set; }
+        public double? price { get; set; }
+        public double? price_btc { get; set; }
+        public long? market_cap { get; set; }
+        public double? percent_change_24h { get; set; }
+        public double? percent_change_7d { get; set; }
+        public double? percent_change_30d { get; set; }
         public string s { get; set; }
         public string n { get; set; }
-        public double p { get; set; }
-        public double p_btc { get; set; }
-        public double gs { get; set; }
-        public long mc { get; set; }
+        public double? p { get; set; }
+        public double? p_btc { get; set; }
+        public double? gs { get; set; }
+        public long? mc { get; set; }
         /*public double volume_24h { get; set; }
         public string max_supply { get; set; }
-        public int social_contributors_calc_24h_previous { get; set; }
+        /*public int social_contributors_calc_24h_previous { get; set; }
         public int url_shares_calc_24h_previous { get; set; }
+        public double volume_24h { get; set; }
         public int tweet_spam_calc_24h_previous { get; set; }
         public int news_calc_24h_previous { get; set; }
         public double average_sentiment_calc_24h_previous { get; set; }
@@ -49,8 +51,8 @@ namespace projet.APIcontroler
         public int time { get; set; }
         public double open { get; set; }
         public double high { get; set; }
-        public double low { get; set; }
-        public double volume { get; set; }
+        public double low { get; set; }*/
+        public double? volume { get; set; }/*
         public int url_shares { get; set; }
         public int unique_url_shares { get; set; }
         public int reddit_posts { get; set; }
@@ -82,9 +84,9 @@ namespace projet.APIcontroler
         public int price_score { get; set; }
         public int social_impact_score { get; set; }
         public double correlation_rank { get; set; }*/
-        public double galaxy_score { get; set; }
-        /*public double volatility { get; set; }
-        public int alt_rank { get; set; }
+        public double? galaxy_score { get; set; }
+        public double? volatility { get; set; }
+        public int? alt_rank { get; set; }/*
         public int alt_rank_30d { get; set; }
         public int market_cap_rank { get; set; }
         public int percent_change_24h_rank { get; set; }
@@ -100,6 +102,7 @@ namespace projet.APIcontroler
         public int medium { get; set; }
         public int youtube { get; set; }
         public double close { get; set; }*/
+        public List<TimeSery> timeSeries { get; set; }
 
         public string getLimitedSymbol()
         {
@@ -133,6 +136,16 @@ namespace projet.APIcontroler
             }
 
             return l.ToString();
+        }
+
+        public string getLimitedHigh(int i)
+        {
+            return timeSeries[i].high.ToString().Substring(0, timeSeries[i].high.ToString().IndexOf(','));
+        }
+        
+        public string getLimitedLow(int i)
+        {
+            return timeSeries[i].low.ToString().Substring(0, timeSeries[i].low.ToString().IndexOf(','));
         }
     }
 }

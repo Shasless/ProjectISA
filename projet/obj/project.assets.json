@@ -48,26 +48,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\adrie\\.nuget\\packages\\": {}
+    "C:\\Users\\jonat\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\adrie\\RiderProjects\\projet\\projet\\projet.csproj",
+      "projectUniqueName": "C:\\Users\\jonat\\Downloads\\ProjectISA-master\\ProjectISA-master\\projet\\projet.csproj",
       "projectName": "projet",
-      "projectPath": "C:\\Users\\adrie\\RiderProjects\\projet\\projet\\projet.csproj",
-      "packagesPath": "C:\\Users\\adrie\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\adrie\\RiderProjects\\projet\\projet\\obj\\",
+      "projectPath": "C:\\Users\\jonat\\Downloads\\ProjectISA-master\\ProjectISA-master\\projet\\projet.csproj",
+      "packagesPath": "C:\\Users\\jonat\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\jonat\\Downloads\\ProjectISA-master\\ProjectISA-master\\projet\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\adrie\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\jonat\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0-windows"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -109,7 +107,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }
