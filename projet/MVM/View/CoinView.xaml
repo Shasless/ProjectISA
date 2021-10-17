@@ -17,8 +17,8 @@
                 <Border Width="400" Height="200" >
                     <Border.Background>
                         <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
-                            <GradientStop Color="Aqua" Offset="0.0"/>
-                            <GradientStop Color="#3aa0ff" Offset="1"/>
+                            <GradientStop Color="#743eb6" Offset="0.0"/>
+                            <GradientStop Color="#4419a5" Offset="1"/>
                         </LinearGradientBrush>
                     </Border.Background>
                     <Border.Clip>
@@ -27,7 +27,7 @@
                 
                     <Grid>
                         <StackPanel>
-                            <TextBlock Name="title" Foreground="White" FontSize="28" Margin="20,10,10,0"/>
+                            <TextBlock Text="LOADING" Name="title" Foreground="White" FontSize="28" Margin="20,10,10,0"/>
                             <TextBlock Name="price" Foreground="White" FontSize="20" Margin="20,10,10,0"/>
                             <TextBlock Name="bitprice" Foreground="White" FontSize="20" Margin="20,10,10,0"/>
                             <TextBlock Name="sigle" Foreground="White" FontSize="20" Margin="20,10,10,0"/>
@@ -39,8 +39,8 @@
                 <Border Width="200" Height="200"  CornerRadius="10" Margin="45,0,0,0">
                     <Border.Background>
                         <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
-                            <GradientStop Color="#ffc554" Offset="0.0"/>
-                            <GradientStop Color="#ffb73a" Offset="1"/>
+                            <GradientStop Color="#743eb6" Offset="0.0"/>
+                            <GradientStop Color="#4419a5" Offset="1"/>
                         </LinearGradientBrush>
                     </Border.Background>
                     <Border.Clip>
@@ -70,8 +70,8 @@
             <Border Width="150" Height="150" CornerRadius="10" Margin="0">
                 <Border.Background>
                     <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
-                        <GradientStop Color="Aqua" Offset="0.0"/>
-                        <GradientStop Color="#3aa0ff" Offset="1"/>
+                        <GradientStop Color="#743eb6" Offset="0.0"/>
+                        <GradientStop Color="#4419a5" Offset="1"/>
                     </LinearGradientBrush>
                 </Border.Background>
                 <Grid>
@@ -86,8 +86,8 @@
             <Border Width="150" Height="150" CornerRadius="10">
                 <Border.Background>
                     <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
-                        <GradientStop Color="Aqua" Offset="0.0"/>
-                        <GradientStop Color="#3aa0ff" Offset="1"/>
+                        <GradientStop Color="#743eb6" Offset="0.0"/>
+                        <GradientStop Color="#4419a5" Offset="1"/>
                     </LinearGradientBrush>
                 </Border.Background>
                 <Grid>
@@ -102,8 +102,8 @@
             <Border Width="150" Height="150" CornerRadius="10">
                 <Border.Background>
                     <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
-                        <GradientStop Color="Aqua" Offset="0.0"/>
-                        <GradientStop Color="#3aa0ff" Offset="1"/>
+                        <GradientStop Color="#743eb6" Offset="0.0"/>
+                        <GradientStop Color="#4419a5" Offset="1"/>
                     </LinearGradientBrush>
                 </Border.Background>
                 <Grid>
@@ -118,8 +118,8 @@
             <Border Width="150" Height="150" CornerRadius="10">
                 <Border.Background>
                     <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
-                        <GradientStop Color="Aqua" Offset="0.0"/>
-                        <GradientStop Color="#3aa0ff" Offset="1"/>
+                        <GradientStop Color="#743eb6" Offset="0.0"/>
+                        <GradientStop Color="#4419a5" Offset="1"/>
                     </LinearGradientBrush>
                 </Border.Background>
                 <Grid>
