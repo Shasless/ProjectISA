@@ -4,17 +4,17 @@
     {
         public int id { get; set; }
         public string name { get; set; }
-        public string symbol { get; set; }
+        public string symbol { get; set; } = "BTC";
         public double price { get; set; }
         public double price_btc { get; set; }
         public long market_cap { get; set; }
         public double percent_change_24h { get; set; }
         public double percent_change_7d { get; set; }
         public double percent_change_30d { get; set; }
-        /*public double volume_24h { get; set; }
         public string max_supply { get; set; }
-        public int social_contributors_calc_24h_previous { get; set; }
+        /*public int social_contributors_calc_24h_previous { get; set; }
         public int url_shares_calc_24h_previous { get; set; }
+        public double volume_24h { get; set; }
         public int tweet_spam_calc_24h_previous { get; set; }
         public int news_calc_24h_previous { get; set; }
         public double average_sentiment_calc_24h_previous { get; set; }
@@ -40,8 +40,8 @@
         public int time { get; set; }
         public double open { get; set; }
         public double high { get; set; }
-        public double low { get; set; }
-        public double volume { get; set; }
+        public double low { get; set; }*/
+        public double volume { get; set; }/*
         public int url_shares { get; set; }
         public int unique_url_shares { get; set; }
         public int reddit_posts { get; set; }
@@ -74,8 +74,8 @@
         public int social_impact_score { get; set; }
         public double correlation_rank { get; set; }*/
         public double galaxy_score { get; set; }
-        /*public double volatility { get; set; }
-        public int alt_rank { get; set; }
+        public double volatility { get; set; }
+        public int alt_rank { get; set; }/*
         public int alt_rank_30d { get; set; }
         public int market_cap_rank { get; set; }
         public int percent_change_24h_rank { get; set; }

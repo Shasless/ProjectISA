@@ -9,9 +9,131 @@
              >
     
     <StackPanel>
-        <TextBlock  Foreground="White" FontSize="28" HorizontalAlignment="Left"  Margin="0,0,0,20" Name="title"/>
-        <TextBlock  Foreground="White" FontSize="28" HorizontalAlignment="Left"  Margin="0,0,0,20" Name="a"/>
-        <TextBlock  Foreground="White" FontSize="28" HorizontalAlignment="Left"  Margin="0,0,0,20" Name="aa"/>
-       
+  
+        
+        <StackPanel>
+            <TextBlock Text="COIN" Foreground="White" FontSize="28" HorizontalAlignment="Left"  Margin="0,0,0,20"/>
+            <StackPanel Orientation="Horizontal">
+                <Border Width="400" Height="200" >
+                    <Border.Background>
+                        <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
+                            <GradientStop Color="Aqua" Offset="0.0"/>
+                            <GradientStop Color="#3aa0ff" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Border.Background>
+                    <Border.Clip>
+                        <RectangleGeometry RadiusX="10" RadiusY="10" Rect="0,0,400,200"></RectangleGeometry>
+                    </Border.Clip>
+                
+                    <Grid>
+                        <StackPanel>
+                            <TextBlock Name="title" Foreground="White" FontSize="28" Margin="20,10,10,0"/>
+                            <TextBlock Name="price" Foreground="White" FontSize="20" Margin="20,10,10,0"/>
+                            <TextBlock Name="bitprice" Foreground="White" FontSize="20" Margin="20,10,10,0"/>
+                            <TextBlock Name="sigle" Foreground="White" FontSize="20" Margin="20,10,10,0"/>
+                        </StackPanel>
+                        <Image Width="250" Height="250"  Name="Image" />
+                    </Grid>
+                </Border>
+                
+                <Border Width="200" Height="200"  CornerRadius="10" Margin="45,0,0,0">
+                    <Border.Background>
+                        <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
+                            <GradientStop Color="#ffc554" Offset="0.0"/>
+                            <GradientStop Color="#ffb73a" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Border.Background>
+                    <Border.Clip>
+                        <RectangleGeometry RadiusX="10" RadiusY="10" Rect="0,0,400,200"></RectangleGeometry>
+                    </Border.Clip>
+                
+                    <Grid>
+                        <StackPanel>
+                            <TextBlock Text="% CHANGE" Foreground="White" FontSize="24" Margin="20,10,10,0"/>
+                            <TextBlock Name="dayex"  FontSize="20" Margin="20,10,10,0"/>
+                            <TextBlock Name="weekex"  FontSize="20" Margin="20,10,10,0"/>
+                            <TextBlock Name="montheex"  FontSize="20" Margin="20,10,10,0"/>
+                        </StackPanel>
+                    </Grid>
+                </Border>
+            </StackPanel>
+            
+        </StackPanel>
+        <TextBlock Text="DATA" Foreground="White" FontSize="28" HorizontalAlignment="Left"  Margin="0,0,0,20"/>
+
+        <StackPanel Orientation="Horizontal">
+            <StackPanel.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="Margin" Value="15,0,0,0"/>
+                </Style>
+            </StackPanel.Resources>
+            <Border Width="150" Height="150" CornerRadius="10" Margin="0">
+                <Border.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
+                        <GradientStop Color="Aqua" Offset="0.0"/>
+                        <GradientStop Color="#3aa0ff" Offset="1"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+                <Grid>
+                    <StackPanel>
+                        <TextBlock Text="Market Cap" Foreground="White" FontSize="20" Margin="20,10,10,0"/>
+                        <TextBlock Name="CapMarket" Foreground="White"  FontSize="22" Margin="0,30,10,0" HorizontalAlignment="Center"/>
+                 
+                    </StackPanel>
+                   
+                </Grid>
+            </Border>
+            <Border Width="150" Height="150" CornerRadius="10">
+                <Border.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
+                        <GradientStop Color="Aqua" Offset="0.0"/>
+                        <GradientStop Color="#3aa0ff" Offset="1"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+                <Grid>
+                    <StackPanel>
+                        <TextBlock Text="Market Volume" Foreground="White" FontSize="18" Margin="20,10,10,0"/>
+
+                        <TextBlock Name="VolMarket" Foreground="White"  FontSize="22" Margin="0,30,10,0" HorizontalAlignment="Center"/>
+                    </StackPanel>
+                   
+                </Grid>
+            </Border>
+            <Border Width="150" Height="150" CornerRadius="10">
+                <Border.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
+                        <GradientStop Color="Aqua" Offset="0.0"/>
+                        <GradientStop Color="#3aa0ff" Offset="1"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+                <Grid>
+                    <StackPanel>
+                        <TextBlock Text="Galaxy Score" Foreground="White" FontSize="20" Margin="20,10,10,0"/>
+
+                        <TextBlock Name="GalaxySc" Foreground="White"  FontSize="22" Margin="0,30,10,0" HorizontalAlignment="Center"/>
+                    </StackPanel>
+                   
+                </Grid>
+            </Border>
+            <Border Width="150" Height="150" CornerRadius="10">
+                <Border.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
+                        <GradientStop Color="Aqua" Offset="0.0"/>
+                        <GradientStop Color="#3aa0ff" Offset="1"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+                <Grid>
+                    <StackPanel>
+                        <TextBlock Text="Alt Rank" Foreground="White" FontSize="20" Margin="0,10,10,0" HorizontalAlignment="Center"/>
+
+                        <TextBlock Name="altrank" Foreground="White" FontSize="22" Margin="0,30,10,0" HorizontalAlignment="Center"/>
+                    </StackPanel>
+                   
+                </Grid>
+            </Border>
+            
+                
+              
+        </StackPanel>
     </StackPanel>
 </UserControl>

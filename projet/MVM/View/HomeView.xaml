@@ -26,6 +26,8 @@
                     </StackPanel>
                 </Grid>
             </Border>
+            
         </StackPanel>
+        
     </StackPanel>
 </UserControl>
