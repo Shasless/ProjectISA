@@ -11,8 +11,8 @@
             <Border Width="700" Height="500" >
                 <Border.Background>
                     <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
-                        <GradientStop Color="Aqua" Offset="0.0"/>
-                        <GradientStop Color="#3aa0ff" Offset="1"/>
+                        <GradientStop Color="#743eb6" Offset="0.0"/>
+                        <GradientStop Color="#4419a5" Offset="1"/>
                     </LinearGradientBrush>
                 </Border.Background>
                 <Border.Clip>
