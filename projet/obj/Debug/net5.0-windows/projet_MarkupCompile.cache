@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-C:\Users\jonat\Downloads\ProjectISA-master\ProjectISA-master\projet\obj\Debug\net5.0-windows\
+C:\Users\adrie\RiderProjects\projet\projet\obj\Debug\net5.0-windows\
 projet
 none
 false
 TRACE;DEBUG;NET;NET5_0;NETCOREAPP
-C:\Users\jonat\Downloads\ProjectISA-master\ProjectISA-master\projet\App.xaml
+C:\Users\adrie\RiderProjects\projet\projet\App.xaml
 61652738877
 
 18673971646
-194957315978
+194947782756
 MainWindow.xaml;MVM\View\CoinView.xaml;MVM\View\GraphView.xaml;MVM\View\HomeView.xaml;Theme\MenuButtonTheme.xaml;Theme\SearchbarTeme.xaml;
 
 False

@@ -53,10 +53,16 @@ namespace projet.MVM.View
                     CapMarket.Text = p.objectRes.data[0].market_cap > 1000000000
                         ? ((int) (p.objectRes.data[0].market_cap / 1000000000)) + "B"
                         : ((int) (p.objectRes.data[0].market_cap / 1000000)) + "M";
+                }else if (p.objectRes.data[0].market_cap == null)
+                {
+                    CapMarket.Text = "N/A";
+
                 }
                 else
                 {
-                    CapMarket.Text = p.objectRes.data[0].market_cap.ToString();}
+                    CapMarket.Text = p.objectRes.data[0].market_cap.ToString();
+                    
+                }
                 if (p.objectRes.data[0].volume > 1000000)
                 {
                     VolMarket.Text = p.objectRes.data[0].volume > 1000000000

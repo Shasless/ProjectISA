@@ -124,19 +124,27 @@ namespace projet.APIcontroler
 
         public string getLimitedPriceBtc()
         {
+            if (p_btc.ToString().Contains("E"))
+            {
+                return "0,...";
+            }
             return p_btc.ToString().Substring(0, 8);
         }
 
         public string getLimitedMC()
         {
             int l = mc.ToString().Length;
+            
             if (l > 7)
             {
                 return (mc / Math.Pow(10, l-1)).ToString().Substring(0,5)+"E"+(l-1).ToString();
             }
 
+            
+
             return l.ToString();
         }
+        
 
         public string getLimitedHigh(int i)
         {

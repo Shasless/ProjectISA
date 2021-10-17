@@ -51,17 +51,73 @@ namespace projet.MVM.View
             pb7.Text = control.ranking.data[6].getLimitedPriceBtc();
             pb8.Text = control.ranking.data[7].getLimitedPriceBtc();
             pb9.Text = control.ranking.data[8].getLimitedPriceBtc();
-            
-            mc.Text = control.ranking.data[0].getLimitedMC();
-            mc2.Text = control.ranking.data[1].getLimitedMC();
-            mc3.Text = control.ranking.data[2].getLimitedMC();
-            mc4.Text = control.ranking.data[3].getLimitedMC();
-            mc5.Text = control.ranking.data[4].getLimitedMC();
-            mc6.Text = control.ranking.data[5].getLimitedMC();
-            mc7.Text = control.ranking.data[6].getLimitedMC();
-            mc8.Text = control.ranking.data[7].getLimitedMC();
-            mc9.Text = control.ranking.data[8].getLimitedMC();
-            
+
+            if (control.ranking.data[0].getLimitedMC() == "1")
+            {
+                mc.Text = "N/A";
+            }
+            else
+            {
+                mc.Text = control.ranking.data[0].getLimitedMC();}
+            if (control.ranking.data[1].getLimitedMC() == "1")
+            {
+                mc2.Text = "N/A";
+            }
+            else
+            {
+                mc2.Text = control.ranking.data[1].getLimitedMC();}
+
+            if (control.ranking.data[2].getLimitedMC() == "1")
+            {
+                mc3.Text = "N/A";
+            }
+            else
+            {
+                mc3.Text = control.ranking.data[2].getLimitedMC();}
+            if (control.ranking.data[3].getLimitedMC() == "1")
+            {
+                mc4.Text = "N/A";
+            }
+            else
+            {
+                mc4.Text = control.ranking.data[3].getLimitedMC();}
+            if (control.ranking.data[5].getLimitedMC() == "1")
+            {
+                mc6.Text = "N/A";
+            }
+            else
+            {
+                mc6.Text = control.ranking.data[5].getLimitedMC();}
+            if (control.ranking.data[6].getLimitedMC() == "1")
+            {
+                mc7.Text = "N/A";
+            }
+            else
+            {
+                mc7.Text = control.ranking.data[6].getLimitedMC();}
+            if (control.ranking.data[7].getLimitedMC() == "1")
+            {
+                mc8.Text = "N/A";
+            }
+            else
+            {
+                mc8.Text = control.ranking.data[7].getLimitedMC();}
+            if (control.ranking.data[8].getLimitedMC() == "1")
+            {
+                mc9.Text = "N/A";
+            }
+            else
+            {
+                mc9.Text = control.ranking.data[8].getLimitedMC();}
+
+            if (control.ranking.data[4].getLimitedMC() == "1")
+            {
+                mc5.Text = "N/A";
+            }
+            else
+            {
+                mc5.Text = control.ranking.data[4].getLimitedMC();}
+
         }
     }
 }
