@@ -37,11 +37,11 @@
                     </Border>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,20,10,0">
-                    <Border Width="10" Height="10" Background="Red" Margin="5"></Border>
+                    <Border Width="10" Height="10" Background="Lime" Margin="5"></Border>
                     <TextBlock Text="Max price" HorizontalAlignment="Center" FontSize="22" Foreground="White"/>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,10,15,0">
-                    <Border Width="10" Height="10" Background="Blue" Margin="5"></Border>
+                    <Border Width="10" Height="10" Background="Red" Margin="5"></Border>
                     <TextBlock Text="Min price" HorizontalAlignment="Center" FontSize="22" Foreground="White"/>
                 </StackPanel>
                 

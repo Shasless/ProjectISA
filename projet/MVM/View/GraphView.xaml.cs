@@ -53,10 +53,10 @@ namespace projet.MVM.View
             for (int i = 0; i < 23; i++)
             {
                 pHigh = new Path();
-                pHigh.Stroke = System.Windows.Media.Brushes.Red;
+                pHigh.Stroke = System.Windows.Media.Brushes.Lime;
                 pHigh.StrokeThickness = 3;
                 pLow = new Path();
-                pLow.Stroke = System.Windows.Media.Brushes.Blue;
+                pLow.Stroke = System.Windows.Media.Brushes.Red;
                 pLow.StrokeThickness = 3;
                 
                 lHigh = new LineGeometry();
